@@ -1,7 +1,4 @@
-@media print {
-  #ribbon-right {visibility: hidden;}
-  #ribbon-left {visibility: hidden;}
-}
+
 
 #ribbon-right {visibility: hidden;}
 #ribbon-left {visibility: visible;}
@@ -9,6 +6,11 @@
 @media (min-width:610px) {
 #ribbon-right {visibility: visible;}
 #ribbon-left {visibility: hidden;}
+}
+
+@media print {
+  #ribbon-right {visibility: hidden;}
+  #ribbon-left {visibility: hidden;}
 }
 
 .ribbon {
