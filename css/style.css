@@ -1,0 +1,46 @@
+body {
+    line-height: 1.4;
+}
+
+.intro-header {
+    position: relative;
+    background: url('../img/header_img/home-header.png') center fixed;
+    background-position-y: -120px;
+}
+
+.intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+    padding: 60px 0;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.list-inline {
+    margin-left: 0;
+}
+
+.list-inline>li {
+    display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+    overflow-wrap: break-word;
+}
+
+.widget ul {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.w3-grey-blue, .w3-hover-grey-blue:hover {
+    color: #fff!important;
+    background-color: #0085a1!important;
+}
+
+.w3-text-grey-blue, .w3-hover-text-grey-blue:hover {
+    color: #0085a1!important;
+}

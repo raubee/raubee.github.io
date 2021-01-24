@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>
+    
+      Unity Package Manager  #1 - Installation d&#39;un package - Loïs Aubrée | Ijin
+        
+  </title>
+
+  <link rel="canonical" href="https://blog.lois-aubree.com/fr/2019/10/16/Unity-Package-Manager/">
+
+  <!-- Bootstrap Core CSS -->
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <!-- Custom Fonts -->
+    
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+
+
+        <!-- Custom CSS -->
+        
+<link rel="stylesheet" href="/css/beantech.min.css">
+
+
+          <!-- Pygments Highlight CSS -->
+          
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+            
+<link rel="stylesheet" href="/css/widget.css">
+
+
+              
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+                
+<link rel="stylesheet" href="/css/signature.css">
+
+
+                  
+<link rel="stylesheet" href="/css/toc.css">
+
+
+                    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <style>
+
+    .intro-header{
+        background: url('header-img.jpg') fixed center/cover;
+    }
+
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+                        <div class="post-heading">
+                            <div class="tags">
+                                
+                                    <a class="tag" href="/tags/#Unity"
+                                        title="Unity">
+                                        Unity
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#Package"
+                                        title="Package">
+                                        Package
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#Architecture"
+                                        title="Architecture">
+                                        Architecture
+                                    </a>
+                                    
+                            </div>
+                            <h1 class="title">
+                                Unity Package Manager  #1 - Installation d&#39;un package
+                            </h1>
+                            <h2 class="subheading">
+                                
+                            </h2>
+                            <span class="meta">
+                                Posted by AdLucem on
+                                    2019-10-16
+                            </span>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<link rel="stylesheet" href="/css/langpicker.css">
+
+
+    <select class="selectpicker" data-width="fit">
+        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+        <option data-content='<span class="flag-icon flag-icon-fr"></span> Francais'>Francais</option>
+    </select>
+</header>
+
+            <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/fr/">
+                            accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://lois-aubree.com">
+                            planétarium
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/fr/about">
+                            à propos
+                        </a>
+                    </li>
+                    <!-- 
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
+                        </li>
+                        
+                     -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    var $body = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e) {
+        if ($navbar.className.indexOf('in') > 0) {
+            $navbar.className = " ";
+            setTimeout(function () {
+                if ($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            }, 400)
+        } else {
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+                    <!-- Main Content -->
+                    <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+                <p>J’ai choisi de commencer la série d’articles sur le nouveau système de packages Unity.<br>Tout d’abord, car c’est un super outil pour la réutilisation de code et garantir une structure de projet modulaire. Mais, surtout, parce que j’utiliserai le système de packages pour partager les sources de mes futurs articles.</p>
+<p><em>Remarque: Tous les codes présents sur le blog seront sous license MIT ou ISC. C’est à dire que tout est utilisable où bon vous semble (commercial ou non). il faut seulement recopier la license fournie dans vos sources pour la MIT. Svp, envoyez moi un mail et/ou citez moi dans les sources si jamais ça vous sert dans un projet. Je serais ravi de voir où le code peut être utile.</em></p>
+<p>Trèves de bavardages, attaquons le sujet.</p>
+<p>On aura pour objectif de faire une revue générale du package manager. Je vais présenter rapidement l’interface car elle est très simple d’utilisation. On prendra plus de temps pour expliquer ce qui se passe derrière la fenêtre du <em>Package Manager</em> et aborder la création, publication de packages.</p>
+<p><strong>Ce tutoriel se fera en trois articles sur le blog:</strong></p>
+<ul>
+<li>Méthodes d’installation d’un package ( ce qui suit )</li>
+<li>Structure et création d’un package</li>
+<li>Publication d’un package (serveur local ou en ligne sur npmjs)</li>
+</ul>
+<h2 id="Decouvrir-le-Package-Manager"><a href="#Decouvrir-le-Package-Manager" class="headerlink" title="Découvrir le Package Manager"></a>Découvrir le Package Manager</h2><p>Depuis fin 2017, le nouveau système de packages a été introduit dans Unity.<br>Il a pour but de remplacer l’ancien système, toujours présent et utilisé par l’asset store. L’ancien système, à base de fichiers <strong><em>.unitypackage</em></strong>, est difficilement maintenable et les packages importés ont tendance à mettre le bazard dans le répertoire <em>Assets/</em>. </p>
+<p>Il était temps pour Unity de se doter d’un système de packages avec révision ( versioning ), facile d’utilisation et de fournir certaines règles dans la structuration des packages.</p>
+<p>Pour cela, Unity a choisi de baser son nouveau système de package sur npm, le système de package de <em>node.js</em>, réputé pour sa flexibilité et simplicité.</p>
+<h4 id="Interface-package-manager"><a href="#Interface-package-manager" class="headerlink" title="Interface package manager"></a>Interface package manager</h4><p>Du côté de l’interface Unity, le package manager s’ouvre depuis <em>Window &gt; Package  Manager</em>. On tombe alors sur cette fenêtre : </p>
+<p><img src="package-manager.png" alt="Package Manager" title="Package Manager Window"></p>
+<p>Lorsque vous installez un package depuis le Package Manager, Unity ajoute une ligne de dépendance dans le fichier <em>Répertoire projet/Packages/manifest.json</em> de votre projet.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;com.unity.analytics&quot;</span>: <span class="string">&quot;3.2.2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.unity.package-manager-ui&quot;</span>: <span class="string">&quot;1.9.11&quot;</span>,</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Toutes les dépendances du projet quelles soient officielles (com.unity. …) ou non sont répertoriées dans le <em>manifest.json</em>.</p>
+<p><strong>Concrètement, que se passe-t-il ?</strong></p>
+<p>Lorsqu’une dépendance est ajoutée au manifest, Unity va regarder dans son registre de packages principal ( <a target="_blank" rel="noopener" href="https://packages.unity.com/">https://packages.unity.com</a> ) ou va tenter de résoudre le chemin renseigné pour trouver les sources du package. Si le package et la version sont trouvés alors il est importé dans le projet. Sinon un message d’erreur est levé dans la console ou une popup d’erreur est lancée à l’ouverture du projet.</p>
+<p>Si tout se passe bien, les fichiers sources du package seront importés ici :</p>
+<p><img src="editor-package-folder.png" alt="Package Manager" title="Package folder in project view"></p>
+<p>Les scripts/assets sont alors utilisables dans votre projet. Pour les packages récupérés en ligne, ils seront stockés en cache dans le dossier de <em>Répertoire projet/Library/PackageCache</em> de votre projet Unity. </p>
+<p><strong>Attention !</strong> Il ne faut pas modifier les packages en cache directement. Toutes les modifications seront rapidement perdues si on vient à rafraichir et ré-importer le package par exemple. L’idée derrière la gestion par packages est de ne pas avoir à modifier les scripts d’un package s’il est bien constitué mais seulement de l’utiliser. Pensez à garder les changements de côté si jamais vous faites des modifications sur les scripts/assets d’un package. </p>
+<h2 id="Facons-d’installer-un-package"><a href="#Facons-d’installer-un-package" class="headerlink" title="Façons d’installer un package"></a>Façons d’installer un package</h2><p>Il existe pleins de manières d’installer un package.</p>
+<h4 id="Package-Manager"><a href="#Package-Manager" class="headerlink" title="Package Manager"></a>Package Manager</h4><p>Il est possible d’ajouter un package local directement en cliquant sur le ‘+’ en bas de la fenêtre du package manager. (2018.4)</p>
+<p><img src="package-local.png" alt="Package Local" title="Package import local"></p>
+<p>Vous avez la possibilité d’ajouter une dépendance à un package situé localement sur votre machine. Il faut indiquer le fichier <em>package.json</em> du package à importer. Il s’agit du fichier d’informations du package (voir l’article : <em>Structure et création d’un package</em>).<br>L’import du package a pour effet d’ajouter une ligne de dépendance dans le fichier <em>manifest.json</em> pointant vers le répertoire du package.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> <span class="attr">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">    &quot;com.my-packages.local&quot; : &quot;file:C:/Path/To/Package/&quot;, &lt;-- chemin vers le package.json</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Edition-du-fichier-manifest-json"><a href="#Edition-du-fichier-manifest-json" class="headerlink" title="Edition du fichier manifest.json"></a>Edition du fichier manifest.json</h4><p>Il peut être plus intéressant de modifier directement le manifest.json du projet ( Dossier <em>Répertoire projet &gt; Packages &gt; manifest.json</em> ).</p>
+<h6 id="Package-local"><a href="#Package-local" class="headerlink" title="Package local"></a>Package local</h6><p>Pour ajouter un package local dans le projet, il suffit de renseigner le chemin vers le répertoire où se trouve le fichier de configuration package.json que vous voulez importer.</p>
+<p>Ajoutez alors <code>file:</code> devant le nom du répertoire pour indiquer à Unity qu’il s’agit d’un package local.</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;com.my-packages.local.test&quot;</span> : <span class="string">&quot;file:C:/Path/To/Package/&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.local.test2&quot;</span> : <span class="string">&quot;file:../Path/From/MyProjet/Package/&quot;</span></span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Remarque</strong>: le chemin peut être renseigné depuis le repertoire du projet (test2).</p>
+<h6 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h6><p>Pour aller plus loin, vous avez la possibilité de renseigner un package situé sur un repo git. Ce qui est bien pour partager le package avec d’autres collaborateurs. Voici différentes manières d’importer les packages : </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.https&quot;</span> : <span class="string">&quot;https://github.com/Organization/my-package.git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.ssh&quot;</span> : <span class="string">&quot;ssh://git@organization.github.com/projects/my-package.git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.ssh2&quot;</span> : <span class="string">&quot;ssh:git@organization.github.com/projects/my-package.git&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.https.tobranch&quot;</span> : <span class="string">&quot;https://github.com/Organization/my-package.git#dev&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.https.torevision&quot;</span> : <span class="string">&quot;https://github.com/Organization/my-package.git#523c4f291cea796141e7211f4951702984d2e9ca&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.https.torevision.short&quot;</span> : <span class="string">&quot;https://github.com/Organization/my-package.git#523c4f&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;com.my-packages.remote.https.totag&quot;</span> : <span class="string">&quot;https://github.com/Organization/my-package.git#3.1.0&quot;</span>,</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Comme vous le voyez, nous avons la possibilité de renseigner les types: commits, tags ou branches pour spécifier une révision particulière. Et Unity supporte les protocoles <em>https</em> et <em>ssh</em>.</p>
+<p>Cette orthographe est aussi acceptée :</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">&quot;com.my-packages.git.https&quot;</span> : <span class="string">&quot;git+https://[&lt;user&gt;[:&lt;password&gt;]@]&lt;host&gt;[:&lt;port&gt;]/&lt;path&gt;[#&lt;revision&gt;]&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Ceci permet d’éviter de renseigner le <em>.git</em> à la fin.</p>
+<p><strong>Attention</strong><br>La limite des méthodes <em>local</em> et <em>Git</em> se trouve dans le versioning et l’enchaînement des dépendances.</p>
+<p>Passer par git ne permet pas de gérer correctement les versions des packages. En effet, c’est assez fastidieux de renseigner le répertoire ainsi que le numéro de commit, la branche ou le tag pour pointer une version particulière. On souhaiterait seulement donner le numéro de version du package, sans avoir à se soucier de l’url. Comme suit :</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">&quot;com.my-package.super-package&quot;</span> : <span class="string">&quot;1.0.0&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>De plus si le package importé est dépendant d’autres packages, Unity ne fait actuellement pas la correspondance si l’on renseigne un lien git. Les dépendances du <em>package.json</em> ne sont pas ajoutées automatiquement au projet. Cela oblige à renseigner chaque dépendances du package importé dans le <em>manifest.json</em>. Ce qui peut s’avérer très long et compliqué à faire lorsque qu’il y a beaucoup de dépendances de dépendances…</p>
+<p>La solution ? Le registre de packages…</p>
+<h4 id="Scoped-registry"><a href="#Scoped-registry" class="headerlink" title="Scoped registry"></a>Scoped registry</h4><p>Il s’agit là d’installer un package non pas présent sur un repo git, mais, qui a été publié dans un registre de packages. Le principal registre de packages npm est <a target="_blank" rel="noopener" href="https://www.npmjs.com/">https://www.npmjs.com/</a>, il est donc possible de publier et importer des packages depuis ce registre. Mais il est aussi possible de créer son propre registre de package. Pour celà, je recommende <a target="_blank" rel="noopener" href="https://verdaccio.org/">verdaccio</a> qui vous permettra de créer un registre perso et de publier seulement pour ce registre. Vous pourrez donc faire tourner un registre de packages sur un réseaux local si vous le souhaitez. Je discuterais de cette partie plus en détail dans l’article conscacré à la publication d’un package.</p>
+<p>Pour ajouter un répertoire de packages, il faut le renseigner dans le <em>manifest.json</em>. Ajoutez alors un tableau <em>scopedRegistries</em> dans le manifest et écrivez l’adresse du registre : </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;scopedRegistries&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;ScopedRegistryName&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;http://registry-url.com&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;scopes&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;com.yourscope&quot;</span></span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">  ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>La variable scope permet seulement de grouper les packages selon un nom commun.</p>
+<p>Par exemple, pour les prochains articles, les codes sources que je proposerai seront récupérables sur npmjs.com. Il suffira de modifier le manifest comme suit :</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&quot;scopedRegistries&quot;: [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;adlucem&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://registry.npmjs.com&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;scopes&quot;</span>: [</span><br><span class="line">      <span class="string">&quot;com.adlucem&quot;</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">],</span><br><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line">  &quot;com.adlucem.package-name&quot;: &quot;X.X.X&quot;,</span><br><span class="line">  ...</span><br><span class="line">  &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Tous les packages seront sous le scope <em>com.adlucem</em>.</p>
+<p><strong>Important</strong> Les packages officiels Unity sont ni plus ni moins des packages publiés sur un registre consacré. ( <a target="_blank" rel="noopener" href="https://packages.unity.com/">https://packages.unity.com</a> )</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">      <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;Unity&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;url&quot;</span>: <span class="string">&quot;https://packages.unity.com&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;scopes&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;com.unity&quot;</span></span><br><span class="line">      ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>Si le package importé est dépendant de packages du même scope ou dépendant de packages situé dans un registre ateignable par Unity. Les dépendances seront résolues et les packages seront importés automatiquement. C’est là toute la force des registres de packages. </p>
+<h3 id="Bonus-Par-le-code"><a href="#Bonus-Par-le-code" class="headerlink" title="(Bonus) Par le code"></a>(Bonus) Par le code</h3><p>Une façon d’installer un package qui n’est pas présentée dans le manuel Unity est l’installation par l’API C#. Cela peut s’avérer utile si vous souhaitez dynamiser l’import et la suppréssion de packages depuis un script de l’éditeur.</p>
+<p>Pour cela, Unity met à notre disposition un client effectuant des appels au package manager. </p>
+<p>Dans le namespace <em>UnityEditor.PackageManager</em>, vous pouvez référencer la classe statique <em>Client</em>.</p>
+<p>Pour ajouter une dépendance, il suffit alors d’appeler: </p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEditor.PackageManager</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> packageName = <span class="string">&quot;com.my-package.superpackage@1.0.0&quot;</span>;</span><br><span class="line">Client.Add(packageName);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Il faut renseigner le nom du package suivi de la version pour importer le package.<br>S’il s’agit d’un package local, vous pouvez mettre, à la place du numéro de version, le chemin vers le dossier local. Sans oublier le <em>file://</em>. La même chose pour git sans oublier le <em>git+https://</em> ou <em>git+ssh://</em>. </p>
+<p>Le client possède plusieurs méthodes statiques pour ajouter, supprimer… des packages. Voir la <a target="_blank" rel="noopener" href="https://docs.unity3d.com/2019.2/Documentation/ScriptReference/PackageManager.Client.html">Doc Client</a></p>
+<p>Cas d’usage : J’ai eu l’occasion de travailler sur des projets VR multi-plateformes. Une des problématiques était de gérer l’import des SDKs selon la plateforme VR ciblées. On voulait seulement avoir les scripts nécessaires pour chaque plateformes, pas plus. L’import et la suppréssion par un script editeur nous a permis d’automatiser tout ça.<br>C’est d’ailleurs ce qui se passe en background lorsque vous selectionnez les plateformes VR ciblées dans <em>PlayerSettings &gt; VR platforms</em>. Selon si vous voulez de l’Oculus ou OpenVR le système va charger/décharger les packages XR utiles à la plateforme.</p>
+<p>Nous avons passé en revue toutes les manières d’installer un package dans Unity. On a pu voir que le nouveau système de package est simple à prendre en main et qu’il permet d’installer et de versionner des packages en ligne comme en local. Il constitue un formidable atout pour les projets collaboratifs et la réutilisation de code.  </p>
+<p>Dans le prochain article, nous créerons notre premier package en respectant les guidelines proposées par Unity.</p>
+<p>Bon code.</p>
+
+                    <hr>
+                    <!-- Pager -->
+                    <ul class="pager">
+                        
+                                
+                                    <li class="next">
+                                        <a href="/2019/09/04/First-post/" data-toggle="tooltip"
+                                            data-placement="top" title="Welcome">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+                    <!-- disqus comment start -->
+                    
+                        <div class="comment">
+                            <div id="disqus_thread" class="disqus-thread"></div>
+                        </div>
+                        
+                            <!-- disqus comment end -->
+            </div>
+
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#Unity" title="Unity">
+                                    Unity
+                                </a>
+                                
+                                <a class="tag" href="/tags/#Package" title="Package">
+                                    Package
+                                </a>
+                                
+                                <a class="tag" href="/tags/#Architecture" title="Architecture">
+                                    Architecture
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+            </div>
+        </div>
+    </div>
+</article>
+
+    <!-- disqus embedded js code start (one page only need to embed once) -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = "http-lois-aubree-com";
+        var disqus_identifier = "https://blog.lois-aubree.com/2019/10/16/Unity-Package-Manager/";
+        var disqus_url = "https://blog.lois-aubree.com/2019/10/16/Unity-Package-Manager/";
+
+        (function () {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <!-- disqus embedded js code start end -->
+    
+
+        
+            <!-- async load function -->
+            <script>
+                function async(u, c) {
+                    var d = document, t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function () {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'left',
+                        icon: 'ℬ'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+                        <!-- Footer -->
+                        <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/_LoisAubree">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/raubee">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/loïs-aubrée-7997ab47">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; raubee 2021
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!-- Bootstrap Select JavaScript -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+
+<script src="/js/langpicker.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://blog.lois-aubree.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!-- Google Analytics -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150299842-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150299842-1');
+    </script>
+
+
+                            <a id="rocket" href="#top"></a>
+                            
+<script src="/js/totop.js"></script>
+
+                                
+<script src="/js/toc.js"></script>
+
+    </body>
+</html>
