@@ -81,6 +81,7 @@
     }
     .about-container .w3-container, .about-container .w3-panel {
         padding: 0;
+        border-radius: 6pt;
     }
     .about-container .w3-margin {
         margin: 0pt!important;
@@ -98,7 +99,7 @@
         margin-right: 0pt!important;
     }
     .about-container .w3-padding-16 {
-        padding: 0pt!important;
+        padding: 6pt!important;
     }
     .about-container .w3-row-padding, .about-container .w3-row-padding>.w3-half, .about-container .w3-row-padding>.w3-third, .about-container .w3-row-padding>.w3-twothird, .about-container .w3-row-padding>.w3-threequarter, .about-container .w3-row-padding>.w3-quarter, .about-container .w3-row-padding>.w3-col {
         padding: 0 5pt;

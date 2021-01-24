@@ -12,6 +12,10 @@ body {
     padding: 60px 0;
 }
 
+.bootstrap-select .btn-default {
+    border-style: none;
+}
+
 .container {
     overflow: hidden;
 }
