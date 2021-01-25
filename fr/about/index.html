@@ -71,7 +71,12 @@
 <meta name="generator" content="Hexo 5.2.0"></head>
     <body>
         <style>
+    .intro-header {
+            background: linear-gradient(#3498db, #2677ac);
+            background-position-y: 0;
+        }
 
+        
 </style>
 
 <header class="intro-header">
@@ -81,7 +86,18 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     
-                            <div class="site-heading">
+                            <div class="about-heading">
+                                <div class="about-avatar-container">
+                                    <div class="circle">
+                                        <div class="avatar-canvas"></div>
+                                    </div>
+                                </div>
+                                <h1 class="title">
+                                    Loïs Aubrée
+                                </h1>
+                                <h3 class="subheading">
+                                    Développeur 3D
+                                </h3>
                             </div>
                             
                 </div>
@@ -206,20 +222,20 @@
           <div class="w3-third">
 
             <div class="w3-white w3-text-grey-blue w3-card-4">
-              <div class="w3-container">
+              <div class="w3-container w3-padding-16">
                 <a href="" onclick="print()" id='ribbon-left' class="ribbon ribbon-top-right"><span>
                     Imprimer
                   </span></a>
-                <div class="w3-display-container">
+                <!-- <div class="w3-display-container">
                   <h2 class="w3-text-grey name-title">
                     <i class="fa fa-user fa-fw w3-xxlarge w3-text-grey-blue"></i>
                     Loïs Aubrée
                   </h2>
-                </div>
+                </div> -->
                 <ul class="list-inline">
-                  <li><i class="fa fa-briefcase fa-fw w3-large w3-text-grey-blue"></i>
+                  <!-- <li><i class="fa fa-briefcase fa-fw w3-large w3-text-grey-blue"></i>
                     Développeur 3D
-                  </li><br>
+                  </li><br> -->
                   <li><i class="fa fa-home fa-fw w3-large w3-text-grey-blue"></i>
                     France, FR
                   </li><br>
@@ -651,6 +667,14 @@
 <!-- Custom Theme JavaScript -->
 
 <script src="/js/hux-blog.min.js"></script>
+
+
+
+<script src="https://threejs.org/build/three.min.js"></script>
+
+
+
+<script src="/js/avatar.js"></script>
 
 
 

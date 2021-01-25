@@ -14,6 +14,47 @@ body {
     margin: 0
 }
 
+.about-heading .title, .about-heading .subheading {
+    text-align: center;
+}
+
+.about-heading .title {
+    color: white;
+    margin: 10px 0;
+}
+
+.about-heading .subheading {
+    color: lightgray;
+    margin: 0;
+}
+
+.about-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-heading .about-avatar-container {
+    height: 300px;
+    width: 300px;
+}
+
+.about-avatar-container .circle {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: #3498db 12px;
+    overflow: hidden;
+    border-style: double;
+}
+
+.about-avatar-container .avatar-canvas {
+    height: 100%;
+    width: 100%;
+    top: 20px;
+}
+
 .about-container p {
     margin: 10px 0;
 }
