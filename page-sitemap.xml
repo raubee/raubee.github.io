@@ -10,6 +10,24 @@
     
     
     <url>
+        <loc>https://blog.lois-aubree.com/work/planet.html</loc>
+        <lastmod>2021-08-03T20:52:36.902Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://blog.lois-aubree.com/planetarium.html</loc>
+        <lastmod>2021-08-03T17:12:10.932Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://blog.lois-aubree.com/work/shaders/mazoid.html</loc>
         <lastmod>2021-06-29T08:12:04.698Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -30,15 +48,6 @@
     <url>
         <loc>https://blog.lois-aubree.com/work/shaders/goldenbulb.html</loc>
         <lastmod>2021-06-29T08:12:04.697Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://blog.lois-aubree.com/work/planet.html</loc>
-        <lastmod>2021-04-21T13:39:04.409Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
