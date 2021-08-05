@@ -19,8 +19,7 @@
       
       <meta name="generator" content="Hexo 5.2.0"></head>
     <body>
-      <div class="planet-gl">
-        <div class="planet-selector unselectable">
+      <div class="planet-selector unselectable">
     <div class="planet-selector__title">Planètes</div>
     <div class="planet-selector__list">
         <div class="planet-selector__body" label="Mercure" id="Mercury" onclick="onClick(event);"><img src="img/universe/mercury.png"></div>
@@ -44,7 +43,7 @@
         current.classList.add('active');
     }
 </script>
-        <footer class="main-footer unselectable">
+      <footer class="main-footer unselectable">
   <div class="footer-links">
     <ul>
       <li><a href="/">Home</a></li>
@@ -52,20 +51,19 @@
     </ul>
   </div>
 </footer>
-      
-        <div id="planet-gl-container" class="unselectable">
-          <div class="ldBar label-center" data-preset="circle" data-value="0"></div>
-          <script src="js/dat.gui/dat.gui.min.js" type="text/javascript"></script>
-          <script src="js/loading-bar/loading-bar.min.js" type="text/javascript"></script>
-          <script src="js/universe.js"></script>
+    
+      <div id="planet-gl-container" class="unselectable">
+        <div class="ldBar label-center" data-preset="circle" data-value="0"></div>
+        <script src="js/dat.gui/dat.gui.min.js" type="text/javascript"></script>
+        <script src="js/loading-bar/loading-bar.min.js" type="text/javascript"></script>
+        <script src="js/universe.js"></script>
+      </div>
+    
+      <div class="text-body unselectable">
+        <div id="typed-strings">
+          <div id="body-name"></div>
         </div>
-      
-        <div class="text-body unselectable">
-          <div id="typed-strings">
-            <div id="body-name"></div>
-          </div>
-          <span id="typed"></span>
-        </div>
+        <span id="typed"></span>
       </div>
     </body>
 </html>
