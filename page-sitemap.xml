@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://blog.lois-aubree.com/</loc>
+        <loc>https://lois-aubree.com/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
@@ -10,7 +10,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/planetarium.html</loc>
+        <loc>https://lois-aubree.com/planetarium.html</loc>
         <lastmod>2021-08-05T17:09:57.949Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/planet.html</loc>
+        <loc>https://lois-aubree.com/work/planet.html</loc>
         <lastmod>2021-08-03T20:52:36.902Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -28,7 +28,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/mazoid.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/mazoid.html</loc>
         <lastmod>2021-06-29T08:12:04.698Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -37,7 +37,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/goldenchains.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/goldenchains.html</loc>
         <lastmod>2021-06-29T08:12:04.698Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -46,7 +46,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/goldenbulb.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/goldenbulb.html</loc>
         <lastmod>2021-06-29T08:12:04.697Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -55,7 +55,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/404.html</loc>
+        <loc>https://lois-aubree.com/404.html</loc>
         <lastmod>2021-04-21T13:23:39.893Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -64,7 +64,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/works.html</loc>
+        <loc>https://lois-aubree.com/works.html</loc>
         <lastmod>2021-04-21T12:11:31.965Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -73,7 +73,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/tunnel.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/tunnel.html</loc>
         <lastmod>2021-04-21T12:11:31.965Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -82,7 +82,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/orb.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/orb.html</loc>
         <lastmod>2021-04-21T12:11:31.964Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -91,7 +91,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/ray-march-tuto.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/ray-march-tuto.html</loc>
         <lastmod>2021-04-21T12:11:31.964Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -100,7 +100,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/react.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/react.html</loc>
         <lastmod>2021-04-21T12:11:31.964Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -109,7 +109,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/kifs.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/kifs.html</loc>
         <lastmod>2021-04-21T12:11:31.963Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -118,7 +118,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/canada.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/canada.html</loc>
         <lastmod>2021-04-21T12:11:31.963Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -127,7 +127,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/julia.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/julia.html</loc>
         <lastmod>2021-04-21T12:11:31.963Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -136,7 +136,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders.html</loc>
+        <loc>https://lois-aubree.com/work/shaders.html</loc>
         <lastmod>2021-04-21T12:11:31.962Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -145,7 +145,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/shaders/aku.html</loc>
+        <loc>https://lois-aubree.com/work/shaders/aku.html</loc>
         <lastmod>2021-04-21T12:11:31.962Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -154,7 +154,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/hv3d.html</loc>
+        <loc>https://lois-aubree.com/work/hv3d.html</loc>
         <lastmod>2021-04-21T12:11:31.961Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -163,7 +163,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/crvi.html</loc>
+        <loc>https://lois-aubree.com/work/crvi.html</loc>
         <lastmod>2021-04-21T12:11:31.961Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -172,7 +172,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/aber.html</loc>
+        <loc>https://lois-aubree.com/work/aber.html</loc>
         <lastmod>2021-04-21T12:11:31.960Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -181,7 +181,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/work/cinevr.html</loc>
+        <loc>https://lois-aubree.com/work/cinevr.html</loc>
         <lastmod>2021-04-21T12:11:31.960Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -190,7 +190,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/fr/</loc>
+        <loc>https://lois-aubree.com/fr/</loc>
         <lastmod>2021-04-21T12:11:31.637Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -199,7 +199,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/blog.html</loc>
+        <loc>https://lois-aubree.com/blog.html</loc>
         <lastmod>2021-04-21T12:11:31.636Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -208,7 +208,7 @@
     
     
     <url>
-        <loc>https://blog.lois-aubree.com/about.html</loc>
+        <loc>https://lois-aubree.com/about.html</loc>
         <lastmod>2021-04-21T12:11:31.592Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
